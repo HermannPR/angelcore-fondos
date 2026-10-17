@@ -2,7 +2,7 @@
 
 Fondos animados de Angelcore (casiangel333). Son 38 loops de 12 s a 30 fps y 1920×1248, y cierran solos.
 
-**Galería para verlos en el navegador:** https://hermannpr.github.io/angelcore-fondos/
+**Galería para verlos en el navegador (empiezan en pausa; al abrir uno puedes pasar al siguiente):** https://hermannpr.github.io/angelcore-fondos/
 
 ## Hojas
 

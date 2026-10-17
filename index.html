@@ -1,53 +1,81 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Angelcore · fondos</title><style>
-:root{--bg:#0b0d2a;--fg:#e8ebff;--mu:#9aa3d9;--ac:#c9d4ff}
+:root{--bg:#0b0d2a;--fg:#e8ebff;--mu:#9aa3d9;--ac:#c9d4ff;--bd:#2a2f6b}
+*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 ui-monospace,Menlo,monospace}
 header{padding:24px 16px 8px}h1{margin:0 0 4px;font-size:28px;letter-spacing:.02em}p{margin:0;color:var(--mu)}
-main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:16px}
-figure{margin:0}video{width:100%;aspect-ratio:1920/1248;background:#000;border:1px solid #2a2f6b;border-radius:6px;display:block}
-figcaption{padding:6px 2px;color:var(--mu)}figcaption b{color:var(--ac);margin-right:4px}a{color:var(--ac)}
-</style></head><body><header><h1>ANGELCORE · fondos</h1><p>38 loops de 12 s, 1920×1248, cierran solos. Se reproducen al verlos en pantalla; toca uno para controlarlo.</p></header>
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding:16px}
+.card{all:unset;cursor:pointer;position:relative;display:block}
+.card img{width:100%;aspect-ratio:1920/1248;object-fit:cover;background:#000;border:1px solid var(--bd);border-radius:6px;display:block}
+.card:focus-visible img,.card:hover img{border-color:var(--ac)}
+.pl{position:absolute;left:50%;top:calc(50% - 14px);transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:rgba(11,13,42,.7);border:1px solid var(--ac);display:grid;place-items:center;font-size:20px;padding-left:4px}
+.cap{display:block;padding:6px 2px;color:var(--mu)}.cap b{color:var(--ac);margin-right:4px}
+#v{position:fixed;inset:0;background:#000;display:none;flex-direction:column;z-index:9}
+#v.on{display:flex}
+#v video{flex:1;min-height:0;width:100%;object-fit:contain;background:#000}
+.bar{display:flex;flex-direction:column;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--bg)}
+.nav,.acc{display:flex;align-items:center;gap:8px}.acc{justify-content:center}
+.bar .t{flex:1;text-align:center;color:var(--mu)}.bar .t b{color:var(--ac);margin-right:4px}
+.bar button,.bar a{font:inherit;color:var(--fg);background:#161a4a;border:1px solid var(--bd);border-radius:8px;padding:10px 14px;text-decoration:none;cursor:pointer}
+.bar button.big{padding:12px 12px;font-size:16px;white-space:nowrap}
+#x{position:absolute;top:12px;right:12px;font:inherit;font-size:20px;color:var(--fg);background:rgba(11,13,42,.75);border:1px solid var(--bd);border-radius:50%;width:44px;height:44px;cursor:pointer}
+</style></head><body><header><h1>ANGELCORE · fondos</h1><p>38 loops de 12 s, 1920×1248, cierran solos. Toca uno para verlo; dentro usa ‹ y › (o desliza) para pasar al anterior o al siguiente.</p></header>
 <main>
-<figure><video src="loops/loop-A.mp4" poster="portadas/A.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>A</b> Catedral pintada · <a href="loops/loop-A.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-B.mp4" poster="portadas/B.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>B</b> Velas y lirios · <a href="loops/loop-B.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-C.mp4" poster="portadas/C.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>C</b> Cielo abierto · <a href="loops/loop-C.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-D.mp4" poster="portadas/D.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>D</b> Vitrales · <a href="loops/loop-D.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-E.mp4" poster="portadas/E.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>E</b> Nocturno · <a href="loops/loop-E.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-F.mp4" poster="portadas/F.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>F</b> Claustro · <a href="loops/loop-F.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-G.mp4" poster="portadas/G.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>G</b> Estampita · <a href="loops/loop-G.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-H.mp4" poster="portadas/H.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>H</b> Despertar · <a href="loops/loop-H.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-I.mp4" poster="portadas/I.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>I</b> Iris infinito · <a href="loops/loop-I.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-J.mp4" poster="portadas/J.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>J</b> Escalera · <a href="loops/loop-J.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-K.mp4" poster="portadas/K.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>K</b> Ciudad flotante · <a href="loops/loop-K.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-L.mp4" poster="portadas/L.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>L</b> Estatua · <a href="loops/loop-L.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-M.mp4" poster="portadas/M.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>M</b> Emblema · <a href="loops/loop-M.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-N.mp4" poster="portadas/N.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>N</b> Metal líquido · <a href="loops/loop-N.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-O.mp4" poster="portadas/O.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>O</b> Tormenta de plumas · <a href="loops/loop-O.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-P.mp4" poster="portadas/P.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>P</b> Ofanim · <a href="loops/loop-P.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-Q.mp4" poster="portadas/Q.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>Q</b> Rosetón vivo · <a href="loops/loop-Q.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-R.mp4" poster="portadas/R.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>R</b> Sigilo vivo · <a href="loops/loop-R.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-S.mp4" poster="portadas/S.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>S</b> Transmisión · <a href="loops/loop-S.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-T.mp4" poster="portadas/T.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>T</b> Sello · <a href="loops/loop-T.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-U.mp4" poster="portadas/U.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>U</b> Agua bendita · <a href="loops/loop-U.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-V.mp4" poster="portadas/V.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>V</b> Retablo · <a href="loops/loop-V.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-W.mp4" poster="portadas/W.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>W</b> Estampa holográfica · <a href="loops/loop-W.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-X.mp4" poster="portadas/X.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>X</b> Ala · <a href="loops/loop-X.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-Y.mp4" poster="portadas/Y.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>Y</b> Un día en el cielo · <a href="loops/loop-Y.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-Z.mp4" poster="portadas/Z.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>Z</b> Vela · <a href="loops/loop-Z.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AA.mp4" poster="portadas/AA.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AA</b> Plumario · <a href="loops/loop-AA.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AB.mp4" poster="portadas/AB.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AB</b> Pluma sola · <a href="loops/loop-AB.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AC.mp4" poster="portadas/AC.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AC</b> Lirios · <a href="loops/loop-AC.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AD.mp4" poster="portadas/AD.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AD</b> Nave sin fin · <a href="loops/loop-AD.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AE.mp4" poster="portadas/AE.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AE</b> Cenit · <a href="loops/loop-AE.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AF.mp4" poster="portadas/AF.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AF</b> Vigilia · <a href="loops/loop-AF.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AG.mp4" poster="portadas/AG.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AG</b> Abanico · <a href="loops/loop-AG.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AH.mp4" poster="portadas/AH.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AH</b> Inmersión · <a href="loops/loop-AH.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AI.mp4" poster="portadas/AI.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AI</b> Súper 8 · <a href="loops/loop-AI.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AJ.mp4" poster="portadas/AJ.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AJ</b> Constelación · <a href="loops/loop-AJ.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AK.mp4" poster="portadas/AK.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AK</b> Reloj · <a href="loops/loop-AK.mp4" download>descargar</a></figcaption></figure>
-<figure><video src="loops/loop-AL.mp4" poster="portadas/AL.jpg" preload="none" muted loop playsinline controls></video><figcaption><b>AL</b> Eclipse · <a href="loops/loop-AL.mp4" download>descargar</a></figcaption></figure>
+<button class="card" data-i="0"><img src="portadas/A.jpg" alt="A Catedral pintada" loading="lazy"><span class="pl">▶</span><span class="cap"><b>A</b> Catedral pintada</span></button>
+<button class="card" data-i="1"><img src="portadas/B.jpg" alt="B Velas y lirios" loading="lazy"><span class="pl">▶</span><span class="cap"><b>B</b> Velas y lirios</span></button>
+<button class="card" data-i="2"><img src="portadas/C.jpg" alt="C Cielo abierto" loading="lazy"><span class="pl">▶</span><span class="cap"><b>C</b> Cielo abierto</span></button>
+<button class="card" data-i="3"><img src="portadas/D.jpg" alt="D Vitrales" loading="lazy"><span class="pl">▶</span><span class="cap"><b>D</b> Vitrales</span></button>
+<button class="card" data-i="4"><img src="portadas/E.jpg" alt="E Nocturno" loading="lazy"><span class="pl">▶</span><span class="cap"><b>E</b> Nocturno</span></button>
+<button class="card" data-i="5"><img src="portadas/F.jpg" alt="F Claustro" loading="lazy"><span class="pl">▶</span><span class="cap"><b>F</b> Claustro</span></button>
+<button class="card" data-i="6"><img src="portadas/G.jpg" alt="G Estampita" loading="lazy"><span class="pl">▶</span><span class="cap"><b>G</b> Estampita</span></button>
+<button class="card" data-i="7"><img src="portadas/H.jpg" alt="H Despertar" loading="lazy"><span class="pl">▶</span><span class="cap"><b>H</b> Despertar</span></button>
+<button class="card" data-i="8"><img src="portadas/I.jpg" alt="I Iris infinito" loading="lazy"><span class="pl">▶</span><span class="cap"><b>I</b> Iris infinito</span></button>
+<button class="card" data-i="9"><img src="portadas/J.jpg" alt="J Escalera" loading="lazy"><span class="pl">▶</span><span class="cap"><b>J</b> Escalera</span></button>
+<button class="card" data-i="10"><img src="portadas/K.jpg" alt="K Ciudad flotante" loading="lazy"><span class="pl">▶</span><span class="cap"><b>K</b> Ciudad flotante</span></button>
+<button class="card" data-i="11"><img src="portadas/L.jpg" alt="L Estatua" loading="lazy"><span class="pl">▶</span><span class="cap"><b>L</b> Estatua</span></button>
+<button class="card" data-i="12"><img src="portadas/M.jpg" alt="M Emblema" loading="lazy"><span class="pl">▶</span><span class="cap"><b>M</b> Emblema</span></button>
+<button class="card" data-i="13"><img src="portadas/N.jpg" alt="N Metal líquido" loading="lazy"><span class="pl">▶</span><span class="cap"><b>N</b> Metal líquido</span></button>
+<button class="card" data-i="14"><img src="portadas/O.jpg" alt="O Tormenta de plumas" loading="lazy"><span class="pl">▶</span><span class="cap"><b>O</b> Tormenta de plumas</span></button>
+<button class="card" data-i="15"><img src="portadas/P.jpg" alt="P Ofanim" loading="lazy"><span class="pl">▶</span><span class="cap"><b>P</b> Ofanim</span></button>
+<button class="card" data-i="16"><img src="portadas/Q.jpg" alt="Q Rosetón vivo" loading="lazy"><span class="pl">▶</span><span class="cap"><b>Q</b> Rosetón vivo</span></button>
+<button class="card" data-i="17"><img src="portadas/R.jpg" alt="R Sigilo vivo" loading="lazy"><span class="pl">▶</span><span class="cap"><b>R</b> Sigilo vivo</span></button>
+<button class="card" data-i="18"><img src="portadas/S.jpg" alt="S Transmisión" loading="lazy"><span class="pl">▶</span><span class="cap"><b>S</b> Transmisión</span></button>
+<button class="card" data-i="19"><img src="portadas/T.jpg" alt="T Sello" loading="lazy"><span class="pl">▶</span><span class="cap"><b>T</b> Sello</span></button>
+<button class="card" data-i="20"><img src="portadas/U.jpg" alt="U Agua bendita" loading="lazy"><span class="pl">▶</span><span class="cap"><b>U</b> Agua bendita</span></button>
+<button class="card" data-i="21"><img src="portadas/V.jpg" alt="V Retablo" loading="lazy"><span class="pl">▶</span><span class="cap"><b>V</b> Retablo</span></button>
+<button class="card" data-i="22"><img src="portadas/W.jpg" alt="W Estampa holográfica" loading="lazy"><span class="pl">▶</span><span class="cap"><b>W</b> Estampa holográfica</span></button>
+<button class="card" data-i="23"><img src="portadas/X.jpg" alt="X Ala" loading="lazy"><span class="pl">▶</span><span class="cap"><b>X</b> Ala</span></button>
+<button class="card" data-i="24"><img src="portadas/Y.jpg" alt="Y Un día en el cielo" loading="lazy"><span class="pl">▶</span><span class="cap"><b>Y</b> Un día en el cielo</span></button>
+<button class="card" data-i="25"><img src="portadas/Z.jpg" alt="Z Vela" loading="lazy"><span class="pl">▶</span><span class="cap"><b>Z</b> Vela</span></button>
+<button class="card" data-i="26"><img src="portadas/AA.jpg" alt="AA Plumario" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AA</b> Plumario</span></button>
+<button class="card" data-i="27"><img src="portadas/AB.jpg" alt="AB Pluma sola" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AB</b> Pluma sola</span></button>
+<button class="card" data-i="28"><img src="portadas/AC.jpg" alt="AC Lirios" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AC</b> Lirios</span></button>
+<button class="card" data-i="29"><img src="portadas/AD.jpg" alt="AD Nave sin fin" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AD</b> Nave sin fin</span></button>
+<button class="card" data-i="30"><img src="portadas/AE.jpg" alt="AE Cenit" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AE</b> Cenit</span></button>
+<button class="card" data-i="31"><img src="portadas/AF.jpg" alt="AF Vigilia" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AF</b> Vigilia</span></button>
+<button class="card" data-i="32"><img src="portadas/AG.jpg" alt="AG Abanico" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AG</b> Abanico</span></button>
+<button class="card" data-i="33"><img src="portadas/AH.jpg" alt="AH Inmersión" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AH</b> Inmersión</span></button>
+<button class="card" data-i="34"><img src="portadas/AI.jpg" alt="AI Súper 8" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AI</b> Súper 8</span></button>
+<button class="card" data-i="35"><img src="portadas/AJ.jpg" alt="AJ Constelación" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AJ</b> Constelación</span></button>
+<button class="card" data-i="36"><img src="portadas/AK.jpg" alt="AK Reloj" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AK</b> Reloj</span></button>
+<button class="card" data-i="37"><img src="portadas/AL.jpg" alt="AL Eclipse" loading="lazy"><span class="pl">▶</span><span class="cap"><b>AL</b> Eclipse</span></button>
 </main>
+<div id="v" role="dialog" aria-label="Visor de fondos"><video id="vid" muted loop playsinline controls></video><button id="x" aria-label="Cerrar">✕</button>
+<div class="bar"><div class="nav"><button class="big" id="prev" aria-label="Anterior">‹ anterior</button><span class="t" id="t"></span><button class="big" id="next" aria-label="Siguiente">siguiente ›</button></div><div class="acc"><a id="dl" download>descargar</a><button id="fs">pantalla completa</button></div></div></div>
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.preload="auto";v.play().catch(()=>{})}else v.pause()}),{threshold:.5});
-document.querySelectorAll("video").forEach(v=>io.observe(v));
+const F=[["A", "Catedral pintada"], ["B", "Velas y lirios"], ["C", "Cielo abierto"], ["D", "Vitrales"], ["E", "Nocturno"], ["F", "Claustro"], ["G", "Estampita"], ["H", "Despertar"], ["I", "Iris infinito"], ["J", "Escalera"], ["K", "Ciudad flotante"], ["L", "Estatua"], ["M", "Emblema"], ["N", "Metal líquido"], ["O", "Tormenta de plumas"], ["P", "Ofanim"], ["Q", "Rosetón vivo"], ["R", "Sigilo vivo"], ["S", "Transmisión"], ["T", "Sello"], ["U", "Agua bendita"], ["V", "Retablo"], ["W", "Estampa holográfica"], ["X", "Ala"], ["Y", "Un día en el cielo"], ["Z", "Vela"], ["AA", "Plumario"], ["AB", "Pluma sola"], ["AC", "Lirios"], ["AD", "Nave sin fin"], ["AE", "Cenit"], ["AF", "Vigilia"], ["AG", "Abanico"], ["AH", "Inmersión"], ["AI", "Súper 8"], ["AJ", "Constelación"], ["AK", "Reloj"], ["AL", "Eclipse"]];
+const v=document.getElementById("v"),vid=document.getElementById("vid"),t=document.getElementById("t"),dl=document.getElementById("dl");
+let i=0;
+function show(n){i=(n+F.length)%F.length;const[l,nm]=F[i];vid.poster="portadas/"+l+".jpg";vid.src="loops/loop-"+l+".mp4";dl.href=vid.src;t.innerHTML="<b>"+l+"</b> "+nm+"<br>"+(i+1)+" de "+F.length;vid.play().catch(()=>{});history.replaceState(null,"","#"+l)}
+function open_(n){v.classList.add("on");document.body.style.overflow="hidden";show(n)}
+function close_(){vid.pause();vid.removeAttribute("src");vid.load();v.classList.remove("on");document.body.style.overflow="";history.replaceState(null,"",location.pathname)}
+document.querySelectorAll(".card").forEach(c=>c.onclick=()=>open_(+c.dataset.i));
+document.getElementById("prev").onclick=()=>show(i-1);
+document.getElementById("next").onclick=()=>show(i+1);
+document.getElementById("x").onclick=close_;
+document.getElementById("fs").onclick=()=>{const e=v;(e.requestFullscreen?e.requestFullscreen():vid.webkitEnterFullscreen&&vid.webkitEnterFullscreen())};
+addEventListener("keydown",e=>{if(!v.classList.contains("on"))return;if(e.key=="ArrowRight")show(i+1);else if(e.key=="ArrowLeft")show(i-1);else if(e.key=="Escape")close_()});
+let x0=null;vid.addEventListener("touchstart",e=>x0=e.touches[0].clientX,{passive:true});
+vid.addEventListener("touchend",e=>{if(x0==null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)show(d<0?i+1:i-1);x0=null});
+const h=location.hash.slice(1),k=F.findIndex(f=>f[0]==h);if(k>=0)open_(k);
 </script></body></html>
