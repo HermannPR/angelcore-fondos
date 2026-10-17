@@ -1,6 +1,6 @@
 # ANGELCORE · fondos
 
-Fondos animados de Angelcore (casiangel333). Son 32 loops de 12 s a 30 fps y 1920×1248, y cierran solos.
+Fondos animados de Angelcore (casiangel333). Son 38 loops de 12 s a 30 fps y 1920×1248, y cierran solos.
 
 **Galería para verlos en el navegador:** https://hermannpr.github.io/angelcore-fondos/
 
@@ -11,6 +11,7 @@ Fondos animados de Angelcore (casiangel333). Son 32 loops de 12 s a 30 fps y 192
 ![Loops P–U](hojas/hoja-loops-conceptos-2.jpg)
 ![Loops V–Z](hojas/hoja-loops-conceptos-3.jpg)
 ![Loops AA–AF](hojas/hoja-loops-conceptos-4.jpg)
+![Loops AG–AL](hojas/hoja-loops-conceptos-5.jpg)
 
 ## Loops
 
@@ -48,3 +49,9 @@ Fondos animados de Angelcore (casiangel333). Son 32 loops de 12 s a 30 fps y 192
 | AD | Nave sin fin | [loop-AD.mp4](loops/loop-AD.mp4) |
 | AE | Cenit | [loop-AE.mp4](loops/loop-AE.mp4) |
 | AF | Vigilia | [loop-AF.mp4](loops/loop-AF.mp4) |
+| AG | Abanico | [loop-AG.mp4](loops/loop-AG.mp4) |
+| AH | Inmersión | [loop-AH.mp4](loops/loop-AH.mp4) |
+| AI | Súper 8 | [loop-AI.mp4](loops/loop-AI.mp4) |
+| AJ | Constelación | [loop-AJ.mp4](loops/loop-AJ.mp4) |
+| AK | Reloj | [loop-AK.mp4](loops/loop-AK.mp4) |
+| AL | Eclipse | [loop-AL.mp4](loops/loop-AL.mp4) |
