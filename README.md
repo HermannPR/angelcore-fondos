@@ -1,6 +1,6 @@
 # ANGELCORE · fondos
 
-Fondos animados de Angelcore (casiangel333). Son 26 loops de 12 s a 30 fps y 1920×1248, y cierran solos.
+Fondos animados de Angelcore (casiangel333). Son 32 loops de 12 s a 30 fps y 1920×1248, y cierran solos.
 
 **Galería para verlos en el navegador:** https://hermannpr.github.io/angelcore-fondos/
 
@@ -10,6 +10,7 @@ Fondos animados de Angelcore (casiangel333). Son 26 loops de 12 s a 30 fps y 192
 ![Loops H–O](hojas/hoja-loops-conceptos.jpg)
 ![Loops P–U](hojas/hoja-loops-conceptos-2.jpg)
 ![Loops V–Z](hojas/hoja-loops-conceptos-3.jpg)
+![Loops AA–AF](hojas/hoja-loops-conceptos-4.jpg)
 
 ## Loops
 
@@ -41,3 +42,9 @@ Fondos animados de Angelcore (casiangel333). Son 26 loops de 12 s a 30 fps y 192
 | X | Ala | [loop-X.mp4](loops/loop-X.mp4) |
 | Y | Un día en el cielo | [loop-Y.mp4](loops/loop-Y.mp4) |
 | Z | Vela | [loop-Z.mp4](loops/loop-Z.mp4) |
+| AA | Plumario | [loop-AA.mp4](loops/loop-AA.mp4) |
+| AB | Pluma sola | [loop-AB.mp4](loops/loop-AB.mp4) |
+| AC | Lirios | [loop-AC.mp4](loops/loop-AC.mp4) |
+| AD | Nave sin fin | [loop-AD.mp4](loops/loop-AD.mp4) |
+| AE | Cenit | [loop-AE.mp4](loops/loop-AE.mp4) |
+| AF | Vigilia | [loop-AF.mp4](loops/loop-AF.mp4) |
